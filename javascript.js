@@ -46,12 +46,6 @@ function playRound(playerSelection, computerSelection){
 
 }
 
-// Declare playerSelection
-const playerSelection = prompt("Whats ur choice? Rock/Paper/Scissors");
-// Declare computerSelection
-const computerSelection = getComputerChoice();
-// console computerSelection
-console.log(`computer picks ${computerSelection}`)
 
 // Function Invocation
 // playRound(playerSelection, computerSelection)
@@ -59,8 +53,15 @@ console.log(`computer picks ${computerSelection}`)
 // console.log(playRound(playerSelection, computerSelection));
 
 function game(){
-    playRound(playerSelection, computerSelection)
+    
     for (let i = 0; i < 5; i ++){
+        // Declare playerSelection
+        const playerSelection = prompt("Whats ur choice? Rock/Paper/Scissors");
+        // Declare computerSelection
+        const computerSelection = getComputerChoice();
+        // console computerSelection
+        console.log(`computer picks ${computerSelection}`)
+        // going to playRound function
         playRound(playerSelection, computerSelection)
     }
 
@@ -74,3 +75,5 @@ function game(){
     }
 
 }
+
+game();

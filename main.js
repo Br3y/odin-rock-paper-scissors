@@ -1,5 +1,3 @@
-const playerSelection = prompt("Enter pick? Rock, Paper, Scissor", '');
-const computerSelection = getComputerChoice();
 let playerScore = 0;
 let computerScore = 0;
 function getComputerChoice(){
@@ -54,7 +52,8 @@ function playRound(playerSelection, computerSelection){
 
 function game(){
     for(let i = 0; i < 5; i++){
-        
+        const playerSelection = prompt("Enter pick? Rock, Paper, Scissor", '');
+        const computerSelection = getComputerChoice();
     }
 }
 

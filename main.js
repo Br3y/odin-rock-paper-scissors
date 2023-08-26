@@ -53,6 +53,7 @@ function game(){
         const computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
     }
+    console.log((playerScore > computerScore) ? `Player Win ${playerScore}` : `Computer Win ${computerScore}`);
 }
 
 game();

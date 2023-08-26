@@ -1,0 +1,26 @@
+Plan
+
+-- Play against computer
+-- getComputerChoice function with random pick
+-- create function that have two paramenters ( playerSelection, computerSelection) then result if win or lose
+-- make it case insensitive when picking answer
+-- create function called game() that use previous creation for 5 rounds
+
+PseudoCode
+
+enter a prompt to ask rock paper or scissor and put it into playerSelection
+function getComputerChoice has a random pick of rock paper scissro
+assign getComputerChoice to computerSelection
+
+    
+create function playRound(playerSelection, computerSelection)
+get the playerSelection pick
+get the computerSelection pick
+compare the two
+
+make the player input case insensitive
+
+called the function for 5 rounds using game() function
+
+
+Divide and Conquer

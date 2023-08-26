@@ -21,3 +21,5 @@ function playRound(playerSelection, computerSelection){
         return `both are ${playerSelection}: TIE`;
     }
 }
+
+console.log(playRound(playerSelection, computerSelection));

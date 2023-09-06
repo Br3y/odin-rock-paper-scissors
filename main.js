@@ -1,5 +1,7 @@
 let playerScore = 0;
 let computerScore = 0;
+const buttons = document.querySelectorAll("button");
+const result = document.querySelector("#result");
 
 function getComputerChoice(){
     const computerPick = Math.floor(Math.random() * 3) + 1;
@@ -14,7 +16,11 @@ function getComputerChoice(){
 }
 
 function playRound(playerSelection, computerSelection){
-    playerSelection = playerSelection.toLowerCase();
+    
+    buttons.forEach((button) => button.addEventListener("click", ()=>{
+        playerSelection = button.id.toLowerCase();
+        // console.log(button.id);
+    }))
     computerSelection = computerSelection.toLowerCase();
 
     if(playerSelection === computerSelection){
@@ -47,13 +53,13 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-function game(){
-    for(let i = 0; i < 5; i++){
-        const playerSelection = prompt("Enter pick? Rock, Paper, Scissor", '');
-        const computerSelection = getComputerChoice();
-        console.log(playRound(playerSelection, computerSelection));
-    }
-    console.log((playerScore > computerScore) ? `Player Win ${playerScore}` : `Computer Win ${computerScore}`);
-}
+// function game(){
+//     for(let i = 0; i < 5; i++){
+//         const playerSelection = prompt("Enter pick? Rock, Paper, Scissor", '');
+//         const computerSelection = getComputerChoice();
+//         console.log(playRound(playerSelection, computerSelection));
+//     }
+//     console.log((playerScore > computerScore) ? `Player Win ${playerScore}` : `Computer Win ${computerScore}`);
+// }
 
-game();
+// game();

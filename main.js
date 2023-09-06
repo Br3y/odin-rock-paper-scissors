@@ -25,31 +25,31 @@ function playRound(playerSelection, computerSelection){
     
 
     if(playerSelection === computerSelection){
-        return `both are ${playerSelection}: TIE`;
+        result.textContent = `both are ${playerSelection}: TIE`;
     }
     else if (playerSelection === 'rock' && computerSelection === 'paper'){
         playerScore += 1;
-        return 'You win! Rock beats Paper';
+        result.textContent =  'You win! Rock beats Paper';
     }
     else if (playerSelection === 'rock' && computerSelection === 'scissor'){
         computerScore += 1;
-        return 'You lose! Rock lose to Scissor';
+        result.textContent =  'You lose! Rock lose to Scissor';
     }
     else if (playerSelection === 'paper' && computerSelection === 'rock'){
         playerScore += 1;
-        return 'You win! Paper beats Rock';
+        result.textContent =  'You win! Paper beats Rock';
     }
     else if (playerSelection === 'paper' && computerSelection === 'scissor'){
         computerScore += 1;
-        return 'You lose! Paper lose to Scissor';
+        result.textContent =  'You lose! Paper lose to Scissor';
     }
     else if (playerSelection === 'scissor' && computerSelection === 'paper'){
         playerScore += 1;
-        return 'You win! Scissor beats Paper';
+        result.textContent =  'You win! Scissor beats Paper';
     }
     else if (playerSelection === 'scissor' && computerSelection === 'rock'){
         computerScore += 1;
-        return 'You lose! Scissor lose to Rock';
+        result.textContent =  'You lose! Scissor lose to Rock';
 
     }
 }

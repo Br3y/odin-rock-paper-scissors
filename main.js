@@ -7,6 +7,7 @@ buttons.forEach((button) => button.addEventListener("click", ()=>{
     let playerSelection = button.id.toLowerCase();
     let computerSelection = getComputerChoice().toLowerCase();
     // console.log(button.id);
+    playRound(playerSelection, computerSelection);
 }))
 function getComputerChoice(){
     const computerPick = Math.floor(Math.random() * 3) + 1;

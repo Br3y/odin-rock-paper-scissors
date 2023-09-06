@@ -19,7 +19,7 @@ function getComputerChoice(){
     // } else if (computerPick === 3){
     //     return 'Scissor';
     // }
-    return computerPick[Math.floor(Math.random() * 3) + 1;]
+    return computerPick[Math.floor(Math.random() * 3) + 1];
 }
 
 function playRound(playerSelection, computerSelection){

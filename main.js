@@ -5,7 +5,6 @@ const result = document.querySelector("#result");
 
 buttons.forEach((button) => button.addEventListener("click", ()=>{
     let playerSelection = button.id.toLowerCase();
-    let computerSelection = getComputerChoice().toLowerCase();
     // console.log(button.id);
 }))
 function getComputerChoice(){

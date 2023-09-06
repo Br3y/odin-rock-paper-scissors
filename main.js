@@ -2,7 +2,9 @@ let playerScore = 0;
 let computerScore = 0;
 const buttons = document.querySelectorAll("button");
 
-
+buttons.forEach((button) => button.addEventListener("click", ()=>{
+    console.log(button.id);
+}))
 function getComputerChoice(){
     const computerPick = Math.floor(Math.random() * 3) + 1;
     console.log(computerPick)

@@ -3,6 +3,10 @@ let computerScore = 0;
 const buttons = document.querySelectorAll("button");
 const result = document.querySelector("#result");
 
+buttons.forEach((button) => button.addEventListener("click", ()=>{
+    playerSelection = button.id.toLowerCase();
+    // console.log(button.id);
+}))
 function getComputerChoice(){
     const computerPick = Math.floor(Math.random() * 3) + 1;
     console.log(computerPick)
@@ -17,10 +21,6 @@ function getComputerChoice(){
 
 function playRound(playerSelection, computerSelection){
     
-    buttons.forEach((button) => button.addEventListener("click", ()=>{
-        playerSelection = button.id.toLowerCase();
-        // console.log(button.id);
-    }))
     computerSelection = computerSelection.toLowerCase();
 
     if(playerSelection === computerSelection){

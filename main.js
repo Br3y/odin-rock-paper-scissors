@@ -1,7 +1,7 @@
 let playerScore = 0;
 let computerScore = 0;
 const buttons = document.querySelectorAll("button");
-
+const result = document.querySelector("#result");
 
 function getComputerChoice(){
     const computerPick = Math.floor(Math.random() * 3) + 1;

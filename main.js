@@ -22,7 +22,6 @@ function getComputerChoice(){
 
 function playRound(playerSelection, computerSelection){
     
-    computerSelection = computerSelection.toLowerCase();
 
     if(playerSelection === computerSelection){
         return `both are ${playerSelection}: TIE`;

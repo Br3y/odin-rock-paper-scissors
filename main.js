@@ -52,6 +52,12 @@ function playRound(playerSelection, computerSelection){
         result.textContent =  'You lose! Scissor lose to Rock';
 
     }
+
+    if(computerScore === 5){
+        result.textContent = 'You Win! Computer Wins, Reload to restart the game';
+    } else if (playerScore === 5){
+        result.textContent = 'You lose! Computer Wins, Reload to restart the game';
+    }
 }
 
 // function game(){

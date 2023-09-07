@@ -4,8 +4,8 @@ const buttons = document.querySelectorAll("button");
 const result = document.querySelector("#result");
 
 buttons.forEach((button) => button.addEventListener("click", ()=>{
-    let playerSelection = button.id.toLowerCase();
-    let computerSelection = getComputerChoice().toLowerCase();
+    let playerSelection = button.id;
+    let computerSelection = getComputerChoice();
     // console.log(button.id);
     playRound(playerSelection, computerSelection);
 }))

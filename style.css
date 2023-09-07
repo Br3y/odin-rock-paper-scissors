@@ -1,0 +1,21 @@
+*{
+    background-color:rgb(145, 140, 140);
+    color:white;
+}
+
+.player-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap:6px;
+}
+
+.player-container button{
+    border-radius: 12px;
+}
+
+#result{
+    text-align: center;
+    font-size: large;
+}

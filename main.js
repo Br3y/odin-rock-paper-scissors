@@ -51,10 +51,10 @@ function playRound(playerSelection, computerSelection){
     result.appendChild(computerResult)
 
     if(computerScore === 5){
-        result.textContent = 'You Win! Computer Wins, Reload to restart the game';
+        result.textContent = 'You lose! Computer Wins';
         resetGame();
     } else if (playerScore === 5){
-        result.textContent = 'You lose! Computer Wins, Reload to restart the game';
+        result.textContent = 'You Win! Player Wins';
         resetGame();
     }
 }

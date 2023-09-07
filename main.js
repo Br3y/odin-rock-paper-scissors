@@ -10,7 +10,7 @@ buttons.forEach((button) => button.addEventListener("click", ()=>{
 }))
 function getComputerChoice(){
     const computerPick = ['rock', 'paper', 'scissor'];
-    return computerPick[Math.floor(Math.random() * 3) + 1];
+    return computerPick[Math.floor(Math.random() * 2) + 1];
 }
 
 function playRound(playerSelection, computerSelection){

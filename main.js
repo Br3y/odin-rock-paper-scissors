@@ -19,6 +19,7 @@ function getComputerChoice(){
     // } else if (computerPick === 3){
     //     return 'Scissor';
     // }
+    const computerPick = ['rock', 'paper', 'scissor'];
     return computerPick[Math.floor(Math.random() * 3) + 1];
 }
 

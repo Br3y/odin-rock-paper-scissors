@@ -6,26 +6,14 @@ const result = document.querySelector("#result");
 buttons.forEach((button) => button.addEventListener("click", ()=>{
     let playerSelection = button.id;
     let computerSelection = getComputerChoice();
-    // console.log(button.id);
     playRound(playerSelection, computerSelection);
 }))
 function getComputerChoice(){
-    // const computerPick = Math.floor(Math.random() * 3) + 1;
-    // console.log(computerPick)
-    // if(computerPick === 1){
-    //     return 'Rock';
-    // } else if (computerPick === 2){
-    //     return 'Paper';
-    // } else if (computerPick === 3){
-    //     return 'Scissor';
-    // }
     const computerPick = ['rock', 'paper', 'scissor'];
     return computerPick[Math.floor(Math.random() * 3) + 1];
 }
 
 function playRound(playerSelection, computerSelection){
-    
-
     if(playerSelection === computerSelection){
         result.textContent = `both are ${playerSelection}: TIE`;
     }
@@ -52,7 +40,6 @@ function playRound(playerSelection, computerSelection){
     else if (playerSelection === 'scissor' && computerSelection === 'rock'){
         computerScore += 1;
         result.textContent =  'You lose! Scissor lose to Rock';
-
     }
 
     if(computerScore === 5){
@@ -61,14 +48,3 @@ function playRound(playerSelection, computerSelection){
         result.textContent = 'You lose! Computer Wins, Reload to restart the game';
     }
 }
-
-// function game(){
-//     for(let i = 0; i < 5; i++){
-//         const playerSelection = prompt("Enter pick? Rock, Paper, Scissor", '');
-//         const computerSelection = getComputerChoice();
-//         console.log(playRound(playerSelection, computerSelection));
-//     }
-//     console.log((playerScore > computerScore) ? `Player Win ${playerScore}` : `Computer Win ${computerScore}`);
-// }
-
-// game();

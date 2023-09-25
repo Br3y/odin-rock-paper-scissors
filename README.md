@@ -1,3 +1,3 @@
-# rock-paper-scissors
+# odin-rock-paper-scissors
 
 - Project created for TheOdinProject

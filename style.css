@@ -13,9 +13,13 @@
 
 .player-container button{
     border-radius: 12px;
+    margin:0 16px;
 }
-
+button:hover{
+    transform: scale(1.1);
+}
 #result{
     text-align: center;
-    font-size: large;
+    line-height: 1.5em;
+    font-size: x-large;
 }

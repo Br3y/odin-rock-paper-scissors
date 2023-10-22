@@ -2,4 +2,4 @@
 
 - Project created for TheOdinProject
 
-https://br3y.github.io/rock-paper-scissors/
+- https://br3y.github.io/rock-paper-scissors/
